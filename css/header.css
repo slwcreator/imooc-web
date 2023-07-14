@@ -1,0 +1,46 @@
+/* 通栏div */
+#header {
+    height: 72px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* 头部内容居中设置 */
+.nav-box {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+/* logo设置 */
+.nav-box h1 {
+    width: 126px;
+    height: 72px;
+    background-image: url(../images/logo.png);
+    background-size: contain;
+}
+
+.nav-box h1 a {
+    display: block;
+    width: 126px;
+    height: 72px;
+    font-size: 0;
+}
+
+/* 设置课程导航 */
+.item-box {
+    position: relative;
+    margin-left: 20px;
+    height: 72px;
+    line-height: 72px;
+}
+
+.item-box li {
+    padding: 0 16px;
+    float: left;
+}
+
+.item-box img {
+    width: 14px;
+    position: absolute;
+    top: 18px;
+    left: 220px;
+}
