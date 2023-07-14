@@ -44,3 +44,27 @@
     top: 18px;
     left: 220px;
 }
+
+/* 搜索框 */
+.search {
+    height: 40px;
+    line-height: 40px;
+    margin-left: 10px;
+    padding: 16px 0;
+}
+
+.search div {
+    background-color: #F3F5F6;
+}
+
+.search div input {
+    padding-left: 10px;
+    width: 300px;
+    height: 30px;
+    background-color: #F3F5F6;
+    border: 0;
+}
+
+.search .iconfont {
+    margin-right: 10px;
+}
