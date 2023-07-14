@@ -1,5 +1,6 @@
 /* 通栏div */
 #header {
+    min-width: 1300px;
     height: 72px;
     border-bottom: 1px solid #ccc;
 }
@@ -67,4 +68,37 @@
 
 .search .iconfont {
     margin-right: 10px;
+}
+
+/* 登录/注册区域 */
+.login-area {
+    position: relative;
+    height: 72px;
+    line-height: 72px;
+}
+
+.login-area a {
+    padding: 0 20px;
+}
+
+.login-area .shop-cart {
+    border: 1px solid #CCC;
+    color: #F01414;
+    background-color: #F5F5F5;
+    padding: 8px 20px;
+}
+
+.cart-num {
+    position: absolute;
+    top: 6px;
+    right: 25px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50% 50% 50% 0;
+    color: #FFF;
+    background-color: #F01414;
+    font-size: 12px;
 }
