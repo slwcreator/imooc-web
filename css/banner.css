@@ -172,4 +172,12 @@
     font-size: 12px;
 }
 
+.sys-icon {
+    transition: 0.2s;
+}
+
+.sys-icon:hover {
+    transform: translateY(-2px);
+}
+
 /* 下方体系课 结束 */
