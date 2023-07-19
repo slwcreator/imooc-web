@@ -47,19 +47,35 @@
     }
 
     changeImg(i);
+
+    let flag = true;
     rightArrow.onclick = function () {
+        if (flag == false) {
+            return;
+        }
+        flag = false;
         i++;
         if (i == 4) {
             i = 0;
         }
         changeImg(i);
+        setTimeout(() => {
+            flag = true;
+        }, 1000)
     }
 
     leftArrow.onclick = function () {
+        if (flag == false) {
+            return;
+        }
+        flag = false;
         i--;
         if (i == -1) {
             i = 3;
         }
         changeImg(i);
+        setTimeout(() => {
+            flag = true;
+        }, 1000)
     }
 }
