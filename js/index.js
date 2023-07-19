@@ -35,16 +35,31 @@
     ];
 
     const rightArrow = document.querySelector('.arrow-r');
+    const leftArrow = document.querySelector('.arrow-l');
     const swiperA = document.querySelector('.swiper a');
     const banner = document.querySelector('#banner');
 
     let i = 0;
+
+    function changeImg(index) {
+        swiperA.style.backgroundImage = `url(${swiperImgList[index].path})`;
+        banner.style.backgroundImage = `url(${swiperImgList[index].bg})`;
+    }
+
+    changeImg(i);
     rightArrow.onclick = function () {
         i++;
         if (i == 4) {
             i = 0;
         }
-        swiperA.style.backgroundImage = `url(${swiperImgList[i].path})`;
-        banner.style.backgroundImage = `url(${swiperImgList[i].bg})`;
+        changeImg(i);
+    }
+
+    leftArrow.onclick = function () {
+        i--;
+        if (i == -1) {
+            i = 3;
+        }
+        changeImg(i);
     }
 }
