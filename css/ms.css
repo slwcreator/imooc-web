@@ -1,0 +1,31 @@
+#ms {
+    padding: 20px 0;
+}
+
+.ms-box {
+    height: 342px;
+}
+
+.ms-box h3 {
+    height: 82px;
+}
+
+.countdown-box {
+    height: 260px;
+}
+
+.ms-box .countdown {
+    height: 260px;
+    width: 185px;
+    background-color: #E94443;
+}
+
+.ms-box .ms-list {
+    height: 260px;
+    width: 960px;
+    background-color: orange;
+}
+
+.ms-box h3 img {
+    width: 180px;
+}
