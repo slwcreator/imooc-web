@@ -20,10 +20,10 @@
 }
 
 .swiper {
+    position: relative;
     border-radius: 0 8px 0 0;
     width: 896px;
     height: 382px;
-    background-color: yellow;
 }
 
 .sys-class {
@@ -63,3 +63,66 @@
 }
 
 /* 左侧课程分类列表 结束 */
+
+/* 轮播图 开始 */
+.swiper a {
+    display: block;
+    border-radius: 0 8px 0 0;
+    width: 896px;
+    height: 382px;
+    background-image: url(../images/swiper/swiper-1.jpg);
+    background-size: 896px;
+}
+
+.swiper .arrow {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 10%);
+}
+
+.swiper .arrow:hover {
+    background-color: rgba(0, 0, 0, 10%);
+}
+
+.arrow .iconfont {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.arrow-l {
+    top: 160px;
+    left: 20px;
+}
+
+.arrow-r {
+    top: 160px;
+    right: 20px;
+}
+
+/* 切图按钮 */
+.circle-list {
+    position: absolute;
+    right: 120px;
+    bottom: 25px;
+}
+
+.circle-list li {
+    cursor: pointer;
+    float: left;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    margin-left: 5px;
+    background-color: #fff;
+}
+
+.circle-list li.current {
+    width: 20px;
+    border-radius: 4px;
+}
+
+/* 轮播图 结束 */
