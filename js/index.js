@@ -38,12 +38,14 @@
     const leftArrow = document.querySelector('.arrow-l');
     const swiperA = document.querySelector('.swiper a');
     const banner = document.querySelector('#banner');
+    const lis = document.querySelectorAll('.circle-list li');
 
     let i = 0;
 
     function changeImg(index) {
         swiperA.style.backgroundImage = `url(${swiperImgList[index].path})`;
         banner.style.backgroundImage = `url(${swiperImgList[index].bg})`;
+        currentCircle(index);
     }
 
     changeImg(i);
@@ -78,4 +80,12 @@
             flag = true;
         }, 1000)
     }
+
+    function currentCircle(index) {
+        for (let i = 0; i < lis.length; i++) {
+            lis[i].className = '';
+            lis[index].className = 'current';
+        }
+    }
+
 }
