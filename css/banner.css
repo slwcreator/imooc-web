@@ -1,6 +1,7 @@
 /* 整体布局 开始 */
 #banner {
     padding: 32px;
+    transition: 1s;
 }
 
 .banner-box {
@@ -72,6 +73,7 @@
     height: 382px;
     background-image: url(../images/swiper/swiper-1.jpg);
     background-size: 896px;
+    transition: 1s;
 }
 
 .swiper .arrow {

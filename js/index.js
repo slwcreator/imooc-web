@@ -12,3 +12,39 @@
         input.placeholder = keyWords[i];
     }, 2000)
 }
+
+// 轮播图
+{
+    const swiperImgList = [
+        {
+            path: './images/swiper/swiper-1.jpg',
+            bg: './images/swiper/bj-0.jpg'
+        },
+        {
+            path: './images/swiper/swiper-2.jpg',
+            bg: './images/swiper/bj-1.jpg'
+        },
+        {
+            path: './images/swiper/swiper-3.jpg',
+            bg: './images/swiper/bj-2.jpg'
+        },
+        {
+            path: './images/swiper/swiper-4.jpg',
+            bg: './images/swiper/bj-3.jpg'
+        }
+    ];
+
+    const rightArrow = document.querySelector('.arrow-r');
+    const swiperA = document.querySelector('.swiper a');
+    const banner = document.querySelector('#banner');
+
+    let i = 0;
+    rightArrow.onclick = function () {
+        i++;
+        if (i == 4) {
+            i = 0;
+        }
+        swiperA.style.backgroundImage = `url(${swiperImgList[i].path})`;
+        banner.style.backgroundImage = `url(${swiperImgList[i].bg})`;
+    }
+}
