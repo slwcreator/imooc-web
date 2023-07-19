@@ -39,6 +39,8 @@
     const swiperA = document.querySelector('.swiper a');
     const banner = document.querySelector('#banner');
     const lis = document.querySelectorAll('.circle-list li');
+    const ul = document.querySelector('.circle-list');
+    let timer = null;
 
     let i = 0;
 
@@ -99,5 +101,37 @@
                 flag = true;
             }, 1000)
         }
+    }
+
+    timer = setInterval(() => {
+        i++;
+        if (i == 4) {
+            i = 0;
+        }
+        changeImg(i);
+    }, 3000)
+
+    swiperA.onmouseenter = function () {
+        clearInterval(timer);
+    }
+    swiperA.onmouseleave = function () {
+        timer = setInterval(() => {
+            i++;
+            if (i == 4) {
+                i = 0;
+            }
+            changeImg(i);
+        }, 3000)
+    }
+
+    rightArrow.onmouseenter = function () {
+        clearInterval(timer);
+    }
+    leftArrow.onmouseenter = function () {
+        clearInterval(timer);
+    }
+
+    ul.onmouseenter = function () {
+        clearInterval(timer);
     }
 }
