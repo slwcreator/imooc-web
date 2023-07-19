@@ -88,4 +88,16 @@
         }
     }
 
+    for (let i = 0; i < lis.length; i++) {
+        lis[i].onclick = function () {
+            if (flag == false) {
+                return;
+            }
+            flag = false;
+            changeImg(i);
+            setTimeout(() => {
+                flag = true;
+            }, 1000)
+        }
+    }
 }
