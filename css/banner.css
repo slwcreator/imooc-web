@@ -15,7 +15,8 @@
     border-radius: 8px 0 0 0;
     width: 256px;
     height: 382px;
-    background-color: blueviolet;
+    background-color: #39364D;
+    color: #FFF;
 }
 
 .swiper {
@@ -32,3 +33,33 @@
 }
 
 /* 整体布局 结束 */
+
+/* 左侧课程分类列表 开始 */
+.course-list ul {
+    margin-top: 20px;
+}
+
+.course-list li {
+    cursor: pointer;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 10px;
+}
+
+.course-list li:hover {
+    background-color: rgba(255, 255, 255, 10%);
+}
+
+.course-list .title {
+    font-size: 14px;
+}
+
+.course-list .sub-title {
+    font-size: 12px;
+}
+
+.course-list .iconfont {
+    float: right;
+}
+
+/* 左侧课程分类列表 结束 */
