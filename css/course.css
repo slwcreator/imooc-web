@@ -38,7 +38,12 @@
 }
 
 .course-box .course ul {
+    display: none;
     width: 1176px;
+}
+
+.course-box .course ul.current {
+    display: block;
 }
 
 .course-box .course li {

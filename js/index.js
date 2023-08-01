@@ -198,3 +198,20 @@
         }, 10)
     }
 }
+
+// 课程切换
+{
+    const tabs = document.querySelectorAll('.title-pic a');
+    const uls = document.querySelectorAll('.course ul');
+
+    for (let i = 0; i < tabs.length; i++) {
+        tabs[i].onclick = function () {
+            for (let j = 0; j < tabs.length; j++) {
+                tabs[j].className = '';
+                uls[j].className = '';
+            }
+            tabs[i].className = 'active';
+            uls[i].className = 'current';
+        }
+    }
+}
