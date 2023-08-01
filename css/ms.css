@@ -25,7 +25,6 @@
 .ms-box .ms-list {
     height: 260px;
     width: 960px;
-    background-color: orange;
 }
 
 .ms-box h3 img {
@@ -58,4 +57,40 @@
     height: 30px;
     line-height: 30px;
     background-color: #333;
+}
+
+/* 滚动课程 */
+.ms-box .ms-list li {
+    position: relative;
+    float: left;
+    width: 234px;
+    height: 260px;
+    margin-left: 6px;
+    background-color: #fff;
+}
+
+.ms-box .ms-list li img {
+    width: 234px;
+}
+
+.ms-box .ms-list .title {
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #545C63;
+}
+
+.ms-box .ms-list .difficulty {
+    position: absolute;
+    bottom: 40px;
+    left: 10px;
+    font-size: 12px;
+}
+
+.ms-box .ms-list .price {
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    font-size: 12px;
+    color: #F01414;
+    font-weight: 700;
 }
