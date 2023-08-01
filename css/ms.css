@@ -60,6 +60,17 @@
 }
 
 /* 滚动课程 */
+.ms-list {
+    position: relative;
+    overflow: hidden;
+}
+
+.ms-list ul {
+    position: absolute;
+    left: 0;
+    width: 2880px;
+}
+
 .ms-box .ms-list li {
     position: relative;
     float: left;

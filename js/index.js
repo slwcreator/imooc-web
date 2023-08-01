@@ -176,3 +176,25 @@
         countdown();
     }, 1000)
 }
+
+// 滚动课程
+{
+    const ul = document.querySelector('.ms-list ul');
+    let timer = null;
+    let leftPX = 0;
+    timer = setInterval(() => {
+        leftPX = --leftPX == -1920 ? 0 : leftPX;
+        ul.style.left = leftPX + 'px';
+    }, 10)
+
+    ul.onmouseenter = function () {
+        clearInterval(timer);
+    }
+
+    ul.onmouseleave = function () {
+        timer = setInterval(() => {
+            leftPX = --leftPX == -1920 ? 0 : leftPX;
+            ul.style.left = leftPX + 'px';
+        }, 10)
+    }
+}
