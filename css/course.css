@@ -1,0 +1,19 @@
+/* 整体布局 */
+#course {
+    padding: 32px 0;
+}
+
+.course-box {
+    height: 634px;
+}
+
+.course-box .title-pic {
+    height: 36px;
+    background-color: green;
+}
+
+.course-box .course {
+    height: 568px;
+    margin-top: 30px;
+    background-color: blue;
+}
