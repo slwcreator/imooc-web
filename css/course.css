@@ -9,11 +9,31 @@
 
 .course-box .title-pic {
     height: 36px;
-    background-color: green;
 }
 
 .course-box .course {
     height: 568px;
     margin-top: 30px;
     background-color: blue;
+}
+
+.course-box .title-pic img {
+    width: 162px;
+}
+
+.course-box .title-pic a {
+    margin: 0 10px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.course-box .title-pic a:hover {
+    color: #EC1500;
+}
+
+.course-box .title-pic .active {
+    border-bottom: 2px solid #E76060;
+    padding-bottom: 5px;
+    font-weight: 700;
+    color: #545C63;
 }
