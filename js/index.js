@@ -135,3 +135,44 @@
         clearInterval(timer);
     }
 }
+
+// 秒杀倒计时
+{
+    let endDate = new Date('2023-08-01 10:25:00');
+    endDate = parseInt(endDate.getTime() / 1000);
+
+    const hourDom = document.getElementById('hour');
+    const minDom = document.getElementById('min');
+    const secDom = document.getElementById('sec');
+
+    let timer = null;
+
+    function countdown() {
+        let nowDate = new Date();
+        nowDate = parseInt(nowDate.getTime() / 1000);
+
+        let seconds = endDate - nowDate;
+
+        if (seconds >= 0) {
+            let hours = parseInt(seconds / 3600);
+            hours = hours > 9 ? hours : '0' + hours;
+            let mins = parseInt(seconds % 3600 / 60);
+            mins = mins > 9 ? mins : '0' + mins;
+            let secs = parseInt(seconds % 3600 % 60);
+            secs = secs > 9 ? secs : '0' + secs;
+
+            hourDom.innerText = hours;
+            minDom.innerText = mins;
+            secDom.innerText = secs;
+        } else {
+            clearInterval(timer);
+            document.querySelector('.countdown p').innerText = '拼团已结束';
+        }
+    }
+
+    countdown();
+
+    timer = setInterval(() => {
+        countdown();
+    }, 1000)
+}
