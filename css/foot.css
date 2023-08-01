@@ -1,0 +1,59 @@
+.footer {
+    height: 150px;
+    background-color: #fff;
+}
+
+.container {
+    position: relative;
+}
+
+.foot-link {
+    position: absolute;
+    width: 750px;
+    height: 30px;
+    top: 40px;
+    left: 0;
+}
+
+.foot-link a {
+    font-size: 14px;
+    margin-right: 15px;
+}
+
+.foot-copyright {
+    position: absolute;
+    width: 750px;
+    height: 20px;
+    top: 80px;
+    left: 0;
+    font-size: 12px;
+}
+
+.foot-icon {
+    position: absolute;
+    right: 0;
+    width: 280px;
+    height: 60px;
+    top: 40px;
+}
+
+.foot-icon li {
+    float: left;
+    list-style: none;
+    width: 70px;
+    height: 60px;
+    text-align: center;
+}
+
+.foot-icon .iconfont {
+    font-size: 30px;
+    color: #ccc;
+}
+
+.foot-icon .iconfont:hover {
+    color: #333;
+}
+
+.foot-icon li p {
+    font-size: 12px;
+}
